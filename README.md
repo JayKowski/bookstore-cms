@@ -13,6 +13,9 @@
 - CSS
 - ES6
 
+## Live demo
+
+[💻🌎](https://bookstore-apk.herokuapp.com/)
 ## Getting Started
 
 In order to start with this project you need the next:
@@ -40,13 +43,11 @@ Deployed on [Heroku](https://www.heroku.com/)
 - Twitter: [@btandayamo](https://twitter.com/batandayamo)
 - LinkedIn: [Bertil Tandayamo](http://bit.ly/bertil_linkedin)
 
-👤 **Bertil Tandayamo**
+👤 **Jay Maina**
 
-- Github: [@bertil291utn](https://github.com/bertil291utn)
-- Twitter: [@btandayamo](https://twitter.com/batandayamo)
-- LinkedIn: [Bertil Tandayamo](http://bit.ly/bertil_linkedin)
-
-
+- Github: [@JayKowski](https://github.com/JayKowski)
+- Twitter: [@Kowskijayy](https://twitter.com/Kowskijayy)
+- LinkedIn: [Jay Maina](https://www.linkedin.com/in/jay-maina)
 
 
 ## 🤝 Contributing
