@@ -9,6 +9,7 @@ function BooksForm() {
         Book Title
         <input name="title" id="title" />
       </label>
+      <br />
       <label htmlFor="categories">
         Categories
         <select name="categories" id="categories">
@@ -19,6 +20,7 @@ function BooksForm() {
           }
         </select>
       </label>
+      <br />
       <input type="submit" />
     </form>
   );

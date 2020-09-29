@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { connect } from 'react-redux';
-import Book from './Book';
+import Book from '../components/Book';
 
 const BookList = ({ books }) => (
   <div>
