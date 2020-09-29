@@ -4,6 +4,7 @@ import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
+import rootReducer from './reducers/index';
 
 const randomNumber = () => Math.floor((Math.random() * 100) + 1);
 
@@ -27,8 +28,7 @@ const initialState = {
   ],
 };
 
-const reducerBooks = (state = initialState) => state;
-const store = createStore(reducerBooks);
+const store = createStore(rootReducer, initialState);
 ReactDOM.render(
   <Provider store={store}>
     <App />
