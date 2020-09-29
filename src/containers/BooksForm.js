@@ -1,8 +1,7 @@
-/* eslint-disable class-methods-use-this */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
-import { removeBook } from '../actions/index';
-import {connect} from 'react-redux';
 
 class BooksForm extends Component {
   constructor(props) {
@@ -18,23 +17,22 @@ class BooksForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    
-    if(this.state.title && this.state.category){
-      this.props.bookCreate(this.state);
-      this.setState({ id: "", title: "", category: "" }); 
+    const { title, category } = this.state;
+    const { bookCreate } = this.props;
+    if (title && category) {
+      bookCreate(this.state);
+      this.setState({ id: '', title: '', category: 'Action' });
     }
     e.target.reset();
   }
 
   handleChange(e) {
     const bookId = Math.floor(Math.random() * 100 + 1);
-    if (e.target.name === 'title') { this.setState({ id:bookId, title: e.target.value }); }
-    else { this.setState({ category: e.target.value }); }
+    if (e.target.name === 'title') { this.setState({ id: bookId, title: e.target.value }); } else { this.setState({ category: e.target.value }); }
   }
 
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-    const { title, category } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <label htmlFor="title">
@@ -63,16 +61,10 @@ class BooksForm extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-      return {
-        bookCreate(book) {
-        dispatch(createBook(book));
-      },
-      removeBook(book) {
-        dispatch(removeBook(book));
-      }
-    }
-  
-  }
+const mapDispatchToProps = dispatch => ({
+  bookCreate(book) {
+    dispatch(createBook(book));
+  },
+});
 
 export default connect(null, mapDispatchToProps)(BooksForm);
