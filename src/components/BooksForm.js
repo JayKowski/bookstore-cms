@@ -14,10 +14,9 @@ function BooksForm() {
         <select name="categories" id="categories">
           {
             categories.map(category => (
-              // eslint-disable-next-line react/jsx-key
-              <option value={category}>{category}</option>
+              <option key={category.id} value={category}>{category}</option>
             ))
-        }
+          }
         </select>
       </label>
       <input type="submit" />
