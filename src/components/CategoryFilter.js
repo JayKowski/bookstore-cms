@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 
 const CategoryFilter = ({ handleClick }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  categories.unshift('All');
   return (
     <label htmlFor="categories">
       Categories
       <select
         name="categories"
         id="categories"
+        onChange={handleClick}
       >
-        <option value="All">All</option>
         {categories.map((category, index) => (
-          <option key={`${category + index}`} value={category} onChange={() => handleClick(category)}>
+          <option key={`${category + index}`} value={category}>
             {category}
           </option>
         ))}
