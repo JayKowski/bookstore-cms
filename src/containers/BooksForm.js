@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
 class BooksForm extends Component {
@@ -60,6 +60,10 @@ class BooksForm extends Component {
     );
   }
 }
+
+BooksForm.propTypes = {
+  bookCreate: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = dispatch => ({
   bookCreate(book) {
