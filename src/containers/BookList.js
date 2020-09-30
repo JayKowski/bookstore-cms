@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 import { changeFilter, removeBook } from '../actions/index';
@@ -8,9 +8,9 @@ import { changeFilter, removeBook } from '../actions/index';
 class BookList extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    const { filter } = this.props;
+    this.state = { filter };
     this.handleRemove = this.handleRemove.bind(this);
-    this.filterBooks = this.filterBooks.bind(this);
     this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 
@@ -19,30 +19,21 @@ class BookList extends Component {
     bookRemove(id);
   }
 
-  filterBooks() {
-    const { books, filter } = this.props;
-    if (filter === 'All') books
-    console.log(filter);
-  }
-
   handleFilterChange(event) {
     const { bookChangeFilter } = this.props;
     bookChangeFilter(event.target.value);
-    this.filterBooks(event.target.value);
+    this.setState({ filter: event.target.value });
   }
 
-
-
   render() {
-    const {
-      books,
-    } = this.props;
-    // let booksRender;
-    // if (filtrt == 'all')
-    //   booksRender = books
-    // else
-    //   //filtr return new array 
-
+    const { books } = this.props;
+    let booksRender;
+    const { filter } = this.state;
+    if (filter === 'All') {
+      booksRender = books;
+    } else {
+      booksRender = books.filter(b => b.category === filter);
+    }
     return (
 
       <div>
@@ -57,7 +48,7 @@ class BookList extends Component {
           </thead>
           <tbody>
             {
-              books.map(book => (
+              booksRender.map(book => (
                 <Book
                   key={book.id}
                   id={book.id}
@@ -74,6 +65,13 @@ class BookList extends Component {
     );
   }
 }
+
+BookList.propTypes = {
+  filter: PropTypes.string.isRequired,
+  books: PropTypes.shape.isRequired,
+  bookRemove: PropTypes.func.isRequired,
+  bookChangeFilter: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = state => ({
   books: state.books,
