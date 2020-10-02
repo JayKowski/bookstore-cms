@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 import { changeFilter, removeBook } from '../actions/index';
+import '../booklist.css';
 
 class BookList extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class BookList extends Component {
 
   render() {
     const { books } = this.props;
+    console.log(books);
     let booksRender;
     const { filter } = this.state;
     if (filter === 'All') {
@@ -36,30 +38,19 @@ class BookList extends Component {
     }
     return (
 
-      <div>
+      <div className="book-list">
         <CategoryFilter handleClick={this.handleFilterChange} />
-        <table>
-          <thead>
-            <tr>
-              <th> Book ID </th>
-              <th> Title </th>
-              <th> Category </th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              booksRender.map(book => (
-                <Book
-                  key={book.id}
-                  id={book.id}
-                  title={book.title}
-                  category={book.category}
-                  handleClick={this.handleRemove}
-                />
-              ))
-            }
-          </tbody>
-        </table>
+        {
+          booksRender.map(book => (
+            <Book
+              key={book.id}
+              id={book.id}
+              title={book.title}
+              category={book.category}
+              handleClick={this.handleRemove}
+            />
+          ))
+        }
       </div>
 
     );
@@ -68,7 +59,8 @@ class BookList extends Component {
 
 BookList.propTypes = {
   filter: PropTypes.string.isRequired,
-  books: PropTypes.shape.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  books: PropTypes.array.isRequired,
   bookRemove: PropTypes.func.isRequired,
   bookChangeFilter: PropTypes.func.isRequired,
 };
