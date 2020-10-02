@@ -2,7 +2,7 @@
 
 ### It's a library based in Germany, we need to organize all books in a fast, dynamic and responsive to their actions
 
-[<div align="center"><img src="https://user-images.githubusercontent.com/24902525/94953865-dbe4f280-04ad-11eb-8239-352c0641b6c4.png" alt="image" width="400" /></div>](https://bookstore-apk.herokuapp.com/)
+[<div align="center"><img src="https://user-images.githubusercontent.com/24902525/94953865-dbe4f280-04ad-11eb-8239-352c0641b6c4.png" alt="image" width="800" /></div>](https://bookstore-apk.herokuapp.com/)
 
 *Click on the image to go to live demo*
 
