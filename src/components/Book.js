@@ -11,11 +11,11 @@ const Book = ({
       <p className="title">{title}</p>
       <p className="author">Microverse</p>
       <button className="links-btn" type="button">
-        comment
+        Comment
       </button>
-      <button className="links-btn" type="button" onClick={() => handleClick(id)}>Delete</button>
+      <button className="links-btn" type="button" onClick={() => handleClick(id)}>Remove</button>
       <button className="links-btn" type="button">
-        edit
+        Edit
       </button>
     </div>
     <div className="book-completion" />

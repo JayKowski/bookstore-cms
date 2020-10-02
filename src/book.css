@@ -1,5 +1,9 @@
+p {
+  margin: 0;
+}
+
 .book-row {
-    display: flex;
+  display: flex;
   height: 140px;
   border: 1px solid #e8e8e8;
   background-color: #fff;
@@ -8,10 +12,10 @@
 }
 
 .book-row .category {
-  margin: 0 0 10px 0;
+  margin-bottom: 5px;
   height: 18px;
   opacity: 0.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -24,7 +28,7 @@
 .book-row .title {
   margin: 0;
   height: 29px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -35,9 +39,9 @@
 }
 
 .book-row .author {
-  margin: 0 0 30px 0;
+  margin-bottom: 20px;
   height: 19px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -48,12 +52,12 @@
 }
 
 .book-row .links-btn {
-    padding-left: 0;
+  padding-left: 0;
   margin-right: 20px;
   border: none;
   background-color: unset;
   height: 19px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -66,14 +70,13 @@
 /* book chapters */
 
 .book-chapters {
-
 }
 
 .book-chapters .curr-chapt {
-    width: 126px;
+  width: 126px;
   height: 18px;
   opacity: 0.5;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -83,9 +86,9 @@
 }
 
 .book-chapters .chapter {
-    width: 75px;
+  width: 75px;
   height: 21px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -96,12 +99,12 @@
 }
 
 .book-chapters .update-btn {
-    width: 184px;
+  width: 184px;
   height: 33px;
   border-radius: 3px;
   background-color: #0290ff;
   border: 1px solid #bbb;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
