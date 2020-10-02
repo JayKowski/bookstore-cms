@@ -28,7 +28,6 @@ class BookList extends Component {
 
   render() {
     const { books } = this.props;
-    console.log(books);
     let booksRender;
     const { filter } = this.state;
     if (filter === 'All') {

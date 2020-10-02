@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../book.css';
 
-const Book = ({ id, title, category, handleClick }) => (
+const Book = ({
+  id, title, category, handleClick,
+}) => (
   <div className="book-row" key={`book${id}`}>
     <div className="book-specs">
       <p className="category">{category}</p>
