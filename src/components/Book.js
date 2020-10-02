@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../book.css';
 
-const Book = ({
-  id, title, category, handleClick,
-}) => (
+const Book = ({ id, title, category, handleClick }) => (
   <div className="book-row" key={`book${id}`}>
     <div className="book-specs">
       <p className="category">{category}</p>
@@ -18,11 +16,21 @@ const Book = ({
         Edit
       </button>
     </div>
-    <div className="book-completion" />
+    <div className="book-completion">
+      <div className="percent-wheel">
+        <div className="loader" />
+      </div>
+      <div className="percent-details">
+        <p className="percent-num">75%</p>
+        <p className="completion">completed</p>
+      </div>
+    </div>
     <div className="book-chapters">
       <p className="curr-chapt">current chapter</p>
       <p className="chapter">chapter 17</p>
-      <button className="update-btn" type="button">update progress</button>
+      <button className="update-btn" type="button">
+        update progress
+      </button>
     </div>
   </div>
 );
