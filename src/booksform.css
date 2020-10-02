@@ -1,0 +1,48 @@
+.input-form p {
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+form input, form select {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #e8e8e8;
+}
+
+#title {
+    flex-basis: 55%;
+}
+
+#categories {
+    flex-basis: 35%;
+}
+
+#submit {
+    flex-basis: 15%;
+    width: 184px;
+    border-radius: 3px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0290ff;
+    text-transform: uppercase;
+}
