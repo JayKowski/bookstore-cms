@@ -24,6 +24,10 @@ form select {
   border: 1px solid #e8e8e8;
 }
 
+form input::placeholder {
+  color: #c4c4c4;
+}
+
 #title {
   flex-basis: 55%;
 }
@@ -34,7 +38,7 @@ form select {
 
 #submit {
   flex-basis: 15%;
-  width: 184px;
+  padding: 10px 50px;
   border-radius: 3px;
   font-family: 'Roboto Slab', serif;
   font-size: 13px;

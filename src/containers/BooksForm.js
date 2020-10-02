@@ -50,13 +50,14 @@ class BooksForm extends Component {
             onChange={this.handleChange}
             placeholder="Categories"
           >
+            <option value="" disabled selected hidden>Category</option>
             {categories.map((category, index) => (
               <option key={`${category + index}`} value={category}>
                 {category}
               </option>
             ))}
           </select>
-          <input id="submit" type="submit" />
+          <input id="submit" type="submit" value="Add book" />
         </form>
       </div>
     );
