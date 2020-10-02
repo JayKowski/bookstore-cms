@@ -17,7 +17,7 @@ p {
   opacity: 0.5;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -112,6 +112,6 @@ p {
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
 }
