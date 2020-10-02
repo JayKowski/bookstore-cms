@@ -22,7 +22,7 @@ const Book = ({ id, title, category, handleClick }) => (
       </div>
       <div className="percent-details">
         <p className="percent-num">75%</p>
-        <p className="completion">completed</p>
+        <p className="completion">Completed</p>
       </div>
     </div>
     <div className="book-chapters">
