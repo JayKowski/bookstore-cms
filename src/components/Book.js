@@ -26,8 +26,8 @@ const Book = ({ id, title, category, handleClick }) => (
       </div>
     </div>
     <div className="book-chapters">
-      <p className="curr-chapt">current chapter</p>
-      <p className="chapter">chapter 17</p>
+      <p className="curr-chapt">CURRENT CHAPTER</p>
+      <p className="chapter">Chapter 17</p>
       <button className="update-btn" type="button">
         update progress
       </button>
