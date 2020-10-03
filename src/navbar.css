@@ -1,0 +1,59 @@
+.nav-parent {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 7px 0 #ddd;
+}
+
+.navbar .heading {
+  width: 240px;
+  height: 37px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #0290ff;
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  margin: auto;
+  padding: 20px 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar .link {
+  width: 59px;
+  height: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.navbar .image {
+  position: absolute;
+  left: 90%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.navbar img {
+  width: 25px;
+  height: 20px;
+}

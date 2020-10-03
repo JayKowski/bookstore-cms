@@ -1,0 +1,50 @@
+.input-form p {
+  height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+form {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+form input,
+form select {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+form input::placeholder {
+  color: #c4c4c4;
+}
+
+#title {
+  flex-basis: 55%;
+}
+
+#submit {
+  flex-basis: 15%;
+  padding: 10px 50px;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  text-transform: uppercase;
+}

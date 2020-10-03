@@ -14,14 +14,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fafafa;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.book-store {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button,
+input[type='submit'] {
+  cursor: pointer;
 }
